@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>UG|Computer Science Department</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xBac9PdZtPw5c8Q8MTr7IcpA/ypMiaqmT6DfYKaLbKpgrYKc2lTxxqYNXM/HAVbyC+0y7+TwF/LYx5G4/GgIbg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,50 @@
 
 body {
     background: #ecececdb;
+    font-family: 'Open Sans', sans-serif;
+    background: #ecececdb;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+.main-text{
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #123456;
+        }
+
+p {
+  color: #333; 
+}
+.welcome-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight-text {
+  color: #B22485; /* Highlight color */
+}
+
+.programs-list {
+    list-style: none;
+            padding: 0;
+        }
+
+        .programs-list li {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .programs-list h4 {
+            color: #2968a8; /* Program color */
+        }
+
+        .programs-list p {
+            color: #333;}
 
 .spec-card-list {
     display: grid;
@@ -26,7 +69,7 @@ body {
     max-width: 1250px;
     margin: 150px auto;
     padding: 20px;
-    gap: 20px;
+    gap: 140px;
 }
 
 .spec-card-list .spec-card-item {
@@ -50,10 +93,10 @@ body {
 .spec-card-list .spec-card-item img {
     width:100% ;
     object-fit: cover;
-    border-radius: 8px 8px 0 0; 
+    border-radius: 8px 8px 0 0; /* Adjust the border-radius to have rounded corners only at the top */
     transition: transform 0.3s ease-in-out;
     width: 100%;
-    height: 100px; 
+    height: 100px; /* Adjust this value to control the height of the image */
 }
 
 .spec-card-list .spec-card-item:hover img {
@@ -134,79 +177,73 @@ body {
 .text-containar{
   text-align: center;
 }
-
-
-    </style>
+.additional-content{
+  width: 250px;
+  height: 200px;
+  overflow: scroll;
   
+  
+}
+  
+</style>
+    
 </head>
-<body>
-    <section class="layout">
-        <div class="header">
-            <div class="wrapper">
-                <nav>
-                    <img src="comScience_logo.png" alt="Logo" style="width:30%">
-                    <input type="checkbox" name="UG" id="toggle">
-                    <label for="toggle"><i class="material-icons"><img src="menu-button-of-three-horizontal-lines.png" alt="menu" width="20" height="10"></i></label>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="homepage.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="faculty.html">Faculty</a></li>
-                            <li><a href="research.html">Research Groups</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+<body class="site">
+<section class="layout">
+        <div class="header"> <div class="wrapper">
+            <nav>
+               <img src="comScience_logo.png" alt="Logo" style="width:30% ;">
+               
+               <input type="checkbox" name="UG" id="toggle">
+               <label for="toggle"><i class="material-icons"><img src="menu-button-of-three-horizontal-lines.png" alt="menu" width="20" height="10"></i></label>
+               <div class="menu">
+                   <ul>
+                       <li><a href="homepage.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                       <li><a href="faculty.html">Faculty</a> </li>
+                       <li><a href="research.html">Research Groups</a></li>
+                   </ul>
+               </div>
+            </nav>
         </div>
     
         <div class="main">
           <div class="image-cont">
             <img src="text2photo-b1aad4b1b7ca6ccb1c268a2b5b7008a0.png" alt="headeer image" class="centered-image" >
           </div>
-          <div>
-            <div class="text-containar"><p ><H2>Join our Short course Program</H2></p></div>
-            <p></p>
-          </div>
+                <div class=".main-text">
+
+
+                </div>
+          
+
           <div class="spec-card-list">
             <a href="#" class="spec-card-item">
-                <img src="webbie.png" alt="Card Image" >
-                <span class="developer">Web Development</span>
-                <h3>Develop Web applications..</h3>
+                <img src="images.jpeg" alt="Card Image" >
+                <span class="developer">Computer Science</span>
+                <h3>The discipline of computer science includes the study of algorithms and data structures, computer and network design, modeling data.</h3>
                 <div class="arrow">
                     <i class="fas fa-arrow-right card-icon">➜</i>
                 </div>
             </a>
+            <div class="additional-content">
+              <h1 style="color: #123456; text-decoration: underline;"><b>Our Undergraduate programmes</b></h1>
+              <p>Insight Into Undergraduate Programmes.</p>
+          </div>
+      
             <a href="#" class="spec-card-item">
-                <img src="CCNA.png" alt="Card Image">
-                <span class="designer">Network Fundamentaals.</span>
-                <h3>We provide training for students to become Cisco Certified Network associates</h3>
+                <img src="itec-index-banner.jpg" alt="Card Image">
+                <span class="designer">Information Technology.</span>
+                <h3>Information technology is a set of related fields that encompass computer systems, software, programming languages and data and information processing.</h3>
                 <div class="arrow">
                     <i class="fas fa-arrow-right card-icon">➜</i>
                 </div>
             </a>
-            <a href="#" class="spec-card-item">
-                <img src="Mobile App Dev.jpg" alt="Card Image">
-                <span class="editor">Mobile Application Development.</span>
-                <h3>We provide world class tecnologies for Mobile Applications Development.</h3>
-                <div class="arrow">
-                    <i class="fas fa-arrow-right card-icon">➜</i>
-                </div>
-            </a>
-            <a href="#" class="spec-card-item">
-              <img src="Mobile App Dev.jpg" alt="Card Image">
-              <span class="editor">Mobile Application Development.</span>
-              <h3>We provide world class tecnologies for Mobile Applications Development.</h3>
-              <div class="arrow">
-                  <i class="fas fa-arrow-right card-icon">➜</i>
-              </div>
+            
           </a>
         </div>
-      
-               
         </div>
-
-        <div class="footer">
-          <footer class="footer-container">
+        <div class="footer"><footer class="footer-container">
             <div class="footer-container-top">
               <div class="footer-logo-section">
                 <a href="/" class="footer-logo-link">
@@ -218,7 +255,7 @@ body {
                 </div>
               </div>
               <div class="footer-links-section">
-                <h2 class="footer-links-header"><b>Academics</b></h2>
+                <h2 class="footer-links-header">Academics</h2>
                 <ul class="footer-list">
                   <li class="footer-link-item">
                     <a class="footer-link" href="#">Undergraduate Courses</a>
@@ -229,12 +266,8 @@ body {
                   <li class="footer-link-item">
                     <a class="footer-link" href="#">Graduate Courses (MSc Computer Science)</a>
                   </li>
-                  <li class="footer-link-item">
-                    <a class="footer-link" href="_DEPARTMENT OF COMPUTER SCIENCE, UG - 200 & 300.pdf">Level 200 & 300 Timetable.</a>
-                  </li>
                 </ul>
               </div>
-              
             </div>
         
             <div class="footer-bottom">
@@ -249,14 +282,12 @@ body {
                 </ul>
         
                 <ul class="footer-list footer-list-secondary">
-                  
+                  <!-- Add more secondary links if needed -->
                 </ul>
               </div>
             </div>
           </footer>
-          <p class="copyright">Copyright &copy; 2023 | UG Computer Science Department | All rights reserved.</p> 
-           
         </div>
-    </section>
+</section>
 </body>
 </html>

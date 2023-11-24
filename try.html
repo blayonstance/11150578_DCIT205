@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider-container {
+      width: 80%;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      flex: 0 0 33.33%; 
+      box-sizing: border-box;
+      margin: 0 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .card a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-top: 1px solid #ddd;
+    }
+
+    .slider-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+  </style>
+  <title>Short Courses Slider</title>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="card">
+      <img src="course-image1.jpg" alt="Course Image 1">
+      <div class="card-content">
+        <h2><a href="short-courses1.html">Short Courses 1</a></h2>
+        <p>Explore our wide range of short courses designed to enhance your skills and knowledge.</p>
+      </div>
+      <a href="short-courses1.html">View Courses</a>
+    </div>
+
+    
+
+  </div>
+
+  <button class="slider-btn prev" onclick="prevSlide()">❮</button>
+  <button class="slider-btn next" onclick="nextSlide()">❯</button>
+</div>
+
+<script>
+  let currentSlide = 0;
+
+  function nextSlide() {
+    if (currentSlide < 2) {
+      currentSlide++;
+    } else {
+      currentSlide = 0;
+    }
+    updateSlider();
+  }
+
+  function prevSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+    } else {
+      currentSlide = 2;
+    }
+    updateSlider();
+  }
+
+  function updateSlider() {
+    const slider = document.querySelector('.slider');
+    const slideWidth = document.querySelector('.card').offsetWidth;
+    const newPosition = -currentSlide * slideWidth;
+    slider.style.transform = `translateX(${newPosition}px)`;
+  }
+</script>
+<div class="footer">
+  <footer class="footer">
+      <div class="footer-container footer-container-top">
+          <div class="footer-logo-section">
+              <a href="/" class="footer-logo-link">
+                  <img src="comScience_logo.png" alt="Logo" style="width:60%">
+              </a>
+              <div class="newsletter-section">
+                  <a href="shortcourse.html" class="newsletter-subscribe-link">Find a course</a>
+              </div>
+          </div>
+          
+          <div class="footer-links-section">
+              <h2 class="footer-links-header">Academics</h2>
+              <ul class="footer-list">
+                  <li class="footer-link-item">
+                      <a class="footer-link" href="#">Undergraduate Courses</a>
+                  </li>
+                  <li class="footer-link-item">
+                      <a class="footer-link" href="#">Graduate Courses (MPhil Computer Science)</a>
+                  </li>
+                  <li class="footer-link-item">
+                      <a class="footer-link" href="#">Graduate Courses (MSc Computer Science)</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          <div class="footer-container footer-container-bottom">
+              <ul class="footer-list footer-list-secondary">
+                  <li>
+                      <a href="#">...</a>
+                  </li>
+              </ul>
+              
+              <ul class="footer-list footer-list-secondary">
+                  <li>...</li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+
+  <p>Copyright &copy; 2021 | UG Computer Science Department | All rights reserved.</p>
+</div>
+
+
+</body>
+</html>
