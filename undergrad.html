@@ -25,14 +25,17 @@ body {
     box-sizing: border-box;
 
 }
-.main-text{
-            padding: 20px;
-            text-align: center;
-        }
+.main .main-text{
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
 
-        h1, h2, h3 {
-            color: #123456;
-        }
+}
+
+h1, h2, h3 {
+ color: #123456;
+}
 
 p {
   color: #333; 
@@ -40,36 +43,40 @@ p {
 .welcome-text {
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .highlight-text {
-  color: #B22485; /* Highlight color */
+  color: #B22485; 
 }
 
 .programs-list {
-    list-style: none;
-            padding: 0;
-        }
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 
-        .programs-list li {
-            margin-bottom: 20px;
-            text-align: left;
-        }
 
-        .programs-list h4 {
-            color: #2968a8; /* Program color */
-        }
+.programs-list li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.programs-list h4 {
+  color: #2968a8; 
+}
 
         .programs-list p {
             color: #333;}
 
 .spec-card-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: flex-start; /* Align the cards to the top */
+    flex-wrap: wrap; /* Allow the cards to wrap to the next line if the screen is too small */
     max-width: 1250px;
-    margin: 150px auto;
+    margin: 0 auto;
     padding: 20px;
-    gap: 140px;
 }
 
 .spec-card-list .spec-card-item {
@@ -84,6 +91,9 @@ p {
     text-decoration: none;
     border: 2px solid transparent;
     transition: border 0.5s ease;
+    width: 300px;
+    height: 490px;
+    
 }
 
 .spec-card-list .spec-card-item:hover {
@@ -181,9 +191,15 @@ p {
   width: 250px;
   height: 200px;
   overflow: scroll;
-  
-  
-}
+  }
+  .to-left{
+    
+    
+    align-items: center;
+    
+  overflow:visible;
+  margin-bottom: 15px;
+  }
   
 </style>
     
@@ -211,8 +227,32 @@ p {
           <div class="image-cont">
             <img src="text2photo-b1aad4b1b7ca6ccb1c268a2b5b7008a0.png" alt="headeer image" class="centered-image" >
           </div>
-                <div class=".main-text">
-
+                <div class="main-text">
+                  <div class="welcome-text">
+                    <h1>Welcome to the Undergraduate Programs in <span class="highlight-text">Computer Science and Information Technology</span>!</h1>
+                    <p>Explore the exciting world of technology through our innovative and dynamic undergraduate programs. At <span class="highlight-text">University Of Ghana</span>, we are committed to providing a comprehensive and enriching learning experience.</p>
+                </div>
+    
+               <div class="to-left">
+                <div class="programs-list">
+                  
+                    <li>
+                        <h4>Bachelor of Science in Computer Science (BSc CS)</h4>
+                        <p>Dive into the foundations of algorithm design, software development, and computational theory. Explore the exciting world of artificial intelligence, machine learning, and cybersecurity.</p>
+                    </li>
+                    <li>
+                        <h4>Bachelor of Science in Information Technology (BSc IT)</h4>
+                        <p>Gain expertise in network administration, database management, and IT project management. Learn to harness the power of technology to solve real-world problems.</p>
+                    </li>
+                  
+                  
+                </div>
+    
+               </div>
+                <div class="welcome-text">
+                    <h2>Your Journey Starts Here</h2>
+                    <p>Whether you're passionate about coding, intrigued by cybersecurity, or fascinated by the potential of data, our undergraduate programs offer a diverse range of opportunities to explore and specialize in your chosen field. Join us on a journey of discovery, innovation, and academic excellence.</p>
+                </div>
 
                 </div>
           
@@ -226,10 +266,7 @@ p {
                     <i class="fas fa-arrow-right card-icon">➜</i>
                 </div>
             </a>
-            <div class="additional-content">
-              <h1 style="color: #123456; text-decoration: underline;"><b>Our Undergraduate programmes</b></h1>
-              <p>Insight Into Undergraduate Programmes.</p>
-          </div>
+            
       
             <a href="#" class="spec-card-item">
                 <img src="itec-index-banner.jpg" alt="Card Image">
@@ -243,50 +280,71 @@ p {
           </a>
         </div>
         </div>
-        <div class="footer"><footer class="footer-container">
-            <div class="footer-container-top">
-              <div class="footer-logo-section">
-                <a href="/" class="footer-logo-link">
-                  <img src="comScience_logo.png" alt="Logo" style="width: 60%;">
-                </a>
-                <div class="newsletter-section">
-                  <p class="newsletter-title">Subscribe to our newsletter</p>
-                  <a href="shortcourse.html" class="newsletter-subscribe-link">Find a Course</a>
+        <div class="footer">
+            <footer class="footer-container">
+              <div class="footer-container-top">
+                <div class="footer-logo-section">
+                  <a href="/" class="footer-logo-link">
+                    <img src="comScience_logo.png" alt="Logo" style="width: 60%;">
+                  </a>
+                  <div class="newsletter-section">
+                    <p class="newsletter-title">Subscribe to our newsletter</p>
+                    <a href="shortcourse.html" class="newsletter-subscribe-link">Find a Course</a>
+                  </div>
                 </div>
+                <div class="footer-links-section">
+                  <h2 class="footer-links-header"><b>Academics</b></h2>
+                  <ul class="footer-list">
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="#">Undergraduate Courses</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="#">Graduate Courses (MPhil Computer Science)</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="#">Graduate Courses (MSc Computer Science)</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="_DEPARTMENT OF COMPUTER SCIENCE, UG - 200 & 300.pdf">Level 200 & 300 Timetable.</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                
               </div>
               <div class="footer-links-section">
-                <h2 class="footer-links-header">Academics</h2>
+                <h2 class="footer-links-header"><b>Location</b></h2>
                 <ul class="footer-list">
-                  <li class="footer-link-item">
-                    <a class="footer-link" href="#">Undergraduate Courses</a>
+                  <li class="footer-link-item"> 
+                    University Of Ghana,n
+                  </li>
+                  <li class="footer-link-item"> 
+                     Legon Campus
                   </li>
                   <li class="footer-link-item">
-                    <a class="footer-link" href="#">Graduate Courses (MPhil Computer Science)</a>
-                  </li>
-                  <li class="footer-link-item">
-                    <a class="footer-link" href="#">Graduate Courses (MSc Computer Science)</a>
+Opposite Mathematics Department
                   </li>
                 </ul>
               </div>
-            </div>
-        
-            <div class="footer-bottom">
-              <div class="footer-container-bottom">
-                <ul class="footer-list footer-list-secondary">
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms of Service</a>
-                  </li>
-                </ul>
-        
-                <ul class="footer-list footer-list-secondary">
-                  <!-- Add more secondary links if needed -->
-                </ul>
+              
+              <div class="footer-bottom">
+                <div class="footer-container-bottom">
+                  <ul class="footer-list footer-list-secondary">
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms of Service</a>
+                    </li>
+                  </ul>
+          
+                  <ul class="footer-list footer-list-secondary">
+                    
+                  </ul>
+                </div>
               </div>
-            </div>
-          </footer>
+            </footer>
+            <p class="copyright">Copyright &copy; 2023 | UG Computer Science Department | All rights reserved.</p>
         </div>
 </section>
 </body>
