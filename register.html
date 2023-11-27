@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>UG|Computer Science Department</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js" defer></script>
+    
+    
+</head>
+
+    
+<body class="site">
+    <section class="layout">
+        <header class="header"> 
+            <div class="wrapper">
+                <nav>
+                <img src="comScience_logo.png" alt="Logo" style="width:30%">
+                
+                <input type="checkbox" name="UG" id="toggle">
+                <label for="toggle"><i class="material-icons"><img src="menu.png" alt="menu" width="20" height="10"></i></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faculty.html">Faculty</a> </li>
+                        <li><a href="Events.html">Events</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+            <div class="main">
+                <h2 class="register-heading">UG Registration Form</h2>
+                <div class="register-section">
+                    <form action="" method="post">
+                        <h4 class="register-section-title">General Information</h4>
+                        <div class="register-section-inputs register-general-info">
+                            <div class="register-section-input">
+                                <label for="firstname">First Name</label>
+                                <input required type="text" placeholder="First Name">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="lastname">Last Name</label>
+                                <input required type="text" placeholder="Last Name">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="othername">Other Names</label>
+                                <input type="text" placeholder="Other Names">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="dob">Date Of Birth</label>
+                                <input required type="date" placeholder="00-00-0000">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="age">Age</label>
+                                <input required type="number" min="10" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="hometown">Hometown</label>
+                                <input required type="text" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="address1">Address 1</label>
+                                <input required type="text" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="address2">Address 2</label>
+                                <input type="text" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="phone">Phone Number</label>
+                                <input required type="text" placeholder="">
+                            </div>
+                        </div>
+                        <h4 class="register-section-title">Educational Information</h4>
+                        <div class="register-section-inputs register-education">
+                            <div class="register-section-input">
+                                <label for="certificate">Certificate Type</label>
+                                <select name="certificate" id="certOptions">
+                                    <option value="">WASSCE/SSCE</option>
+                                    <option value="">BECE</option>
+                                    <option value="">Mature Applicant</option>
+                                </select>
+                            </div>
+                            <div class="register-section-input">
+                                <label for="yoc">Year Of Completion</label>
+                                <input type="number" placeholder="Last Name">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="coursetype">Course Type</label>
+                                <select required name="coursetype" id="coursetype" class="f**k">
+                                    <option value="short">Short Courses</option>
+                                    <option value="degree">Degree Programs</option>
+                                    <option value="mphil">MPhils</option>
+                                </select>
+                            </div>
+                            <div class="register-section-input">
+                                <label for="courses">Courses</label>
+                                <select required name="courses" id="courses">
+                                </select>
+                            </div>
+                        </div>
+                        <h4 class="register-section-title">Guardian Information</h4>
+                        <div class="register-section-inputs register-guardian">
+                            <div class="register-section-input">
+                                <label for="firstname">First Name</label>
+                                <input required type="text" placeholder="First Name">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="lastname">Last Name</label>
+                                <input required type="text" placeholder="Last Name">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="othername">Other Names</label>
+                                <input type="text" placeholder="Other Names">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="dob">Date Of Birth</label>
+                                <input required type="date" placeholder="00-00-0000">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="age">Age</label>
+                                <input required type="number" min="10" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="hometown">Hometown</label>
+                                <input required type="text" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="address1">Address 1</label>
+                                <input required type="text" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="address2">Address 2</label>
+                                <input type="text" placeholder="">
+                            </div>
+                            <div class="register-section-input">
+                                <label for="phone">Phone Number</label>
+                                <input required type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="register-button">Register</button>
+                    </form>
+                </div>
+            </div>       
+        </header>
+        <footer class="footer">
+            <footer class="footer-container">
+              <div class="footer-container-top">
+                <div class="footer-logo-section">
+                  <a href="/" class="footer-logo-link">
+                    <img src="comScience_logo.png" alt="Logo" style="width: 60%;">
+                  </a>
+                  <div class="newsletter-section">
+                    <p class="newsletter-title">Subscribe to our newsletter</p>
+                    <a href="shortcourse.html" class="newsletter-subscribe-link">Find a Course</a>
+                  </div>
+                </div>
+                <div class="footer-links-section">
+                  <h2 class="footer-links-header"><b>Academics</b></h2>
+                  <ul class="footer-list">
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="#">Undergraduate Courses</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="#">Graduate Courses (MPhil Computer Science)</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="#">Graduate Courses (MSc Computer Science)</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a class="footer-link" href="_DEPARTMENT OF COMPUTER SCIENCE, UG - 200 & 300.pdf">Level 200 & 300 Timetable.</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                
+              </div>
+              <div class="footer-links-section">
+                <h2 class="footer-links-header"><b>Location</b></h2>
+                <ul class="footer-list">
+                  <li class="footer-link-item"> 
+                    University Of Ghana,n
+                  </li>
+                  <li class="footer-link-item"> 
+                     Legon Campus
+                  </li>
+                  <li class="footer-link-item">
+Opposite Mathematics Department
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="footer-bottom">
+                <div class="footer-container-bottom">
+                  <ul class="footer-list footer-list-secondary">
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms of Service</a>
+                    </li>
+                  </ul>
+          
+                  <ul class="footer-list footer-list-secondary">
+                    
+                  </ul>
+                </div>
+              </div>
+            </footer>
+            <p class="copyright">Copyright &copy; 2023 | UG Computer Science Department | All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
